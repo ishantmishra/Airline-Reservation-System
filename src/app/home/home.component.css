@@ -1,0 +1,91 @@
+.view {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  color: antiquewhite;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px red;
+}
+
+.airline-name {
+  color: antiquewhite;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px red;
+}
+
+.container {
+  background-color: red;
+  width: 25%;
+  height: 25%;
+}
+
+/* .button {
+  width: fit-content;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  right: 30%;
+  bottom: 15%;
+  font-size: 24px;
+  padding: 10px 24px;
+  border-radius: 12px;
+  background-color: ;
+  font-size: 16px;
+  text-align: center;
+} */
+
+.button,
+.button2 {
+  border-radius: 12px;
+  background-color: #191d20;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  color: aqua;
+}
+
+.buttons {
+  right: 15px;
+  bottom: 300px;
+}
+
+.button span,
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after,
+.button2 span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span,
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after,
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
