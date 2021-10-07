@@ -1,33 +1,12 @@
-<html>
-<body>
-    <link rel="stylesheet" href="./login.component.css">
-  
-    <h2>Login Form</h2>
-    <!--Step 1 : Adding HTML-->
-    <form action="/src/app/home/home.component.html">
-        <div class="imgcontainer">
-            <img src=
-"https://cdn.wallpapersafari.com/11/39/TtgoIV.jpg" 
-                 alt="Avatar" class="avatar">
-        </div>
-  
-        <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-  
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-  
-            <button [routerLink]="['/flight-search']" type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-        </div>
-  
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
-  
-</body>
-  
-</html>
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="UserName" class="form-label">UserName</label>
+      <input type="name" class="form-control" id="exampleInputname" aria-describedby="nameHelp">
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

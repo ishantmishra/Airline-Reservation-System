@@ -44,8 +44,8 @@ button:hover {
 /*set image properties*/
 
 img.avatar {
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 600px;
 }
 /*set padding to the container*/
 

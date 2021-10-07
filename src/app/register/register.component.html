@@ -1,66 +1,93 @@
-<!DOCTYPE html>
+<!-- <div class="view" style="background-image: url('https://wallpapercave.com/wp/wp2574287.jpg');">
+    <form (ngSubmit)="submit()">
+    <div class="row">
+        <div class="container">
+        </div>
+        
+            <div class="table">
+                <h2 class="text">Register</h2>
+                <div class="form-group">
+                    <label for="exampleInputName1" class="form-label"></label>
+                <input type="name" class="form-control" placeholder="Full Name" id="exampleInputName1" aria-describedby="emailHelp"
+                name="FullName" [(ngModel)]="register.FullName"> 
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputUsername1" class="form-label"></label>
+                <input type="name" class="form-control" placeholder="User Name" id="exampleInputUsername1" aria-describedby="emailHelp"
+                name="UserName" [(ngModel)]="register.UserName">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="EmailId" [(ngModel)]="register.EmailId">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPhone1" class="form-label"></label>
+                <input type="tel" class="form-control" placeholder="Phone No" id="exampleInputPhone1" aria-describedby="emailHelp"
+                name="PhoneNo" [(ngModel)]="register.PhoneNo" maxlength="10" minlength="10">
+                </div>
+           
+          <div class="">
+            <label for="exampleInputPassword1" class="form-label"></label>
+            <input type="password" class="form-control" placeholder="Password" id="exampleInputPassword1"
+            name="Password" [(ngModel)]="register.Password">
+          </div>
+          <div class="buttons">
+            <button type="submit" class="button">Submit</button>
+          </div>
+          
+                </div>
+            
+        <div>
+        </div>    
+            
+    </div>  
+  
+</form>
+</div> -->
+
+
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./register.component.css">
+
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-<body>
-  <div class="container">
+<body style="background-image: url('https://wallpapercave.com/wp/wp2574287.jpg');">
+
+  <div class="container" >
     <div class="title">Registration</div>
     <div class="content">
-      <form action="#">
+      <form (ngSubmit)="submit()">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">First Name</span>
-            <input type="text" placeholder="Enter your first name" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Last Name</span>
-            <input type="text" placeholder="Enter your last name" required>
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required name="FullName" [(ngModel)]="register.FullName">
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" placeholder="Enter your username" required name="UserName" [(ngModel)]="register.UserName">
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="email" placeholder="Enter your email" required name="EmailId" [(ngModel)]="register.EmailId">
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="tel" placeholder="Enter your number" required name="PhoneNo" [(ngModel)]="register.PhoneNo">
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="password" placeholder="Enter your password" required name="Password" [(ngModel)]="register.Password">
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="password" placeholder="Confirm your password" required>
           </div>
         </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
-        </div>
-        <div (click)="goToPage('Login')" class="button">
+        
+        <div class="buttons">
           <input type="submit" value="Register">
         </div>
       </form>
@@ -69,3 +96,6 @@
 
 </body>
 </html>
+
+    
+
